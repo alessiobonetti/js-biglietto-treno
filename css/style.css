@@ -6,8 +6,14 @@
 
 .calcolatore_biglietto {
   padding: 20px;
+  background: lightgrey;
+  animation: back_change 10s  linear;
 }
 
+@keyframes back_change {
+  from {background-color: lightgrey;}
+  to {background-color: blue;}
+}
 .calcolatore_biglietto p {
   padding-top: 25px;
 }

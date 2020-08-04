@@ -24,7 +24,7 @@ if (etaUtente >= 65) {
   var scontoBiglietto = costoBiglietto / 100;
   scontoBiglietto = scontoBiglietto * 40;
   document.getElementById("costo_biglietto_intero").innerHTML = "Il tuo Biglietto cosa: " + costoBiglietto + " Euro."
-  costoBiglietto = costoBiglietto - scontoBiglietto
+  costoBiglietto = Math.round( costoBiglietto - scontoBiglietto );
   document.getElementById("sconto_65").innerHTML = "Siccome hai almeno 65 anni il tuo biglietto viene scontato di: " + scontoBiglietto + " Euro, pari al 40% di sconto.";
   document.getElementById("costo_biglietto").innerHTML = "Scontato il tuo Biglietto costa:" + costoBiglietto + " Euro.";
 }
@@ -32,7 +32,7 @@ else if (etaUtente < 18) {
   var scontoBiglietto = costoBiglietto / 100;
   scontoBiglietto = scontoBiglietto * 20;
   document.getElementById("costo_biglietto_intero").innerHTML = "Il tuo Biglietto cosa: " + costoBiglietto + " Euro."
-  costoBiglietto = costoBiglietto - scontoBiglietto;
+  costoBiglietto = Math.round( costoBiglietto - scontoBiglietto );
   document.getElementById("sconto_65").innerHTML = "Siccome hai meno di 18 anni il tuo biglietto viene scontato di: " + scontoBiglietto + " Euro, pari al 20% di sconto.";
   document.getElementById("costo_biglietto").innerHTML = "Scontato il tuo Biglietto costa:" + costoBiglietto + " Euro.";
 }
