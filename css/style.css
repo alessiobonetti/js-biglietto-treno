@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.calcolatore_biglietto {
+  padding: 20px;
+}
+
+.calcolatore_biglietto p {
+  padding-top: 25px;
+}
+
+#nome_utente {
+  font-weight: bold;
+  text-transform: uppercase;
+}
